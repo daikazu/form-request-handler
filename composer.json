@@ -1,0 +1,53 @@
+{
+  "name": "daikazu/form-request-handler",
+  "description": "A form request handler",
+  "license": "MIT",
+  "keywords": [
+    "laravel",
+    "form",
+    "request"
+  ],
+  "type": "library",
+  "authors": [
+    {
+      "name": "Mike Wall",
+      "email": "daikazu@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.0",
+    "illuminate/support": "~5.7.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": "~3.7.0",
+    "phpunit/phpunit": "^7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Daikazu\\FormRequestHandler\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Daikazu\\FormRequestHandler\\Tests\\": "tests"
+    },
+    "files": [
+      "vendor/phpunit/phpunit/src/Framework/Assert/Functions.php"
+    ]
+  },
+  "scripts": {
+    "phpunit": "phpunit"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Daikazu\\FormRequestHandler\\ServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": true
+  }
+}
